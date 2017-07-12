@@ -5,6 +5,11 @@
 - このプロジェクトでは、ChocolateyのPackage作成や、いつも使うツール群のインストールなどを行うPowerShellを管理しています。
 
 # よく使うツール群
+- git
+- vagrant
+- terraform
+- terraform-provider-sakuracloud
+- usacloud
 - keepass
 - rdcman
 - visualstudiocode
