@@ -28,6 +28,7 @@ function ChocoPackageInstall() {
 
 # Package update
 function ChocoPackageUpdate() {
+    choco update chocolatey -y;
     choco update keepass -y;
     choco update rdcman -y;
     choco update visualstudiocode -y;
