@@ -6,23 +6,6 @@ $choice = new-object "System.Collections.ObjectModel.Collection``1[[$assembly]]"
 $choice.add($yes);
 $choice.add($no);
 
-# First
-$answer = $host.UI.PromptForChoice("<実行確認>", "インストールを開始しますか？", $choice, 0);
-if ($answer -eq 0) {
-    $answer = $host.UI.PromptForChoice("<Chocolateyインストール>", "Chocolateyのインストールを行いますか？", $choice, 0);
-    if ($answer -eq 0) {
-        ChocoSetup;
-    }
-    $answer = $host.UI.PromptForChoice("<Packageインストール>", "Packageのインストールを行いますか？", $choice, 0);
-    if ($answer -eq 0) {
-        ChocoPackageInstall;
-    }
-    $answer = $host.UI.PromptForChoice("<Packageアップデート>", "Packageのアップデートを行いますか？", $choice, 0);
-    if ($answer -eq 0) {
-        ChocoPackageUpdate;
-    }
-}
-
 # Setup
 function ChocoSetup() {
     iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));
@@ -57,3 +40,21 @@ function ChocoPackageUpdate() {
     choco update chocolateygui -y;
     choco update winscp -y;
 }
+
+# Main
+$answer = $host.UI.PromptForChoice("<実行確認>", "インストールを開始しますか？", $choice, 0);
+if ($answer -eq 0) {
+    $answer = $host.UI.PromptForChoice("<Chocolateyインストール>", "Chocolateyのインストールを行いますか？", $choice, 0);
+    if ($answer -eq 0) {
+        ChocoSetup;
+    }
+    $answer = $host.UI.PromptForChoice("<Packageインストール>", "Packageのインストールを行いますか？", $choice, 0);
+    if ($answer -eq 0) {
+        ChocoPackageInstall;
+    }
+    $answer = $host.UI.PromptForChoice("<Packageアップデート>", "Packageのアップデートを行いますか？", $choice, 0);
+    if ($answer -eq 0) {
+        ChocoPackageUpdate;
+    }
+}
+
