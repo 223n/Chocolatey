@@ -13,6 +13,11 @@ function ChocoSetup() {
 
 # Package Install
 function ChocoPackageInstall() {
+    choco install git -y;
+    choco install vagrant -y;
+    choco install terraform -y;
+    choco install terraform-provider-sakuracloud -y;
+    choco install usacloud -y;
     choco install keepass -y;
     choco install rdcman -y;
     choco install visualstudiocode -y;
@@ -28,6 +33,11 @@ function ChocoPackageInstall() {
 
 # Package update
 function ChocoPackageUpdate() {
+    choco update git -y;
+    choco update vagrant -y;
+    choco update terraform -y;
+    choco update terraform-provider-sakuracloud -y;
+    choco update usacloud -y;
     choco update chocolatey -y;
     choco update keepass -y;
     choco update rdcman -y;
