@@ -19,7 +19,7 @@ function ChocoPackageInstall() {
 # Package update
 function ChocoPackageUpdate() {
     $packagesInfo = [xml](Get-Content "$PSScriptRoot\packages.config");
-    $packageList = [string]::Empty;
+    $packageList = "chocolatey ";
     foreach ($packageInfo in $packagesInfo.packages) {
         $packageList = $packageList + $packageInfo.package.id + " ";
     }
