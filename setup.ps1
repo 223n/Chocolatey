@@ -23,7 +23,7 @@ function ChocoPackageUpdate() {
     foreach ($packageInfo in $packagesInfo.packages) {
         $packageList = $packageList + $packageInfo.package.id + " ";
     }
-    $cmd = "choco update $packageList -y;";
+    $cmd = "choco upgrade $packageList -y;";
     Write-Host $cmd;
     Invoke-Expression $cmd;
 }
