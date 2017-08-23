@@ -42,6 +42,8 @@
   - Charles
 - Presens Tool
   - zoomit
+- Communication Tool
+  - slack
 
 ## License
 
