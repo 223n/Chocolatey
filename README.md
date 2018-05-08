@@ -1,10 +1,12 @@
 # Chocolatey
 
-- ChocolateyPackageAndSetup
+ChocolateyPackageAndSetup
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/223n/Chocolatey/blob/master/LICENSE)
 
 ## このプロジェクトについて
 
-- このプロジェクトでは、ChocolateyのPackage作成や、いつも使うツール群のインストールなどを行うPowerShellを管理しています。
+このプロジェクトでは、ChocolateyのPackage作成や、いつも使うツール群のインストールなどを行うPowerShellを管理しています。
 
 ## How to
 
@@ -44,7 +46,3 @@
   - zoomit
 - Communication Tool
   - slack
-
-## License
-
-MIT
