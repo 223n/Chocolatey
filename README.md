@@ -21,7 +21,7 @@ ChocolateyPackageAndSetup
   - chocolateygui
 - Source Management
   - git
-  - sourcetree
+  - ~~sourcetree~~
 - Infrastructure as Code
   - vagrant
   - terraform
@@ -35,14 +35,14 @@ ChocolateyPackageAndSetup
   - boxstarter
   - bginfo
 - Password Management
-  - keepass
+  - keepassxc
 - Remote Desktop and SSH
   - rdcman
   - winscp
 - Programing
-  - visualstudiocode
+  - ~~visualstudiocode~~
   - Charles
 - Presens Tool
   - zoomit
 - Communication Tool
-  - slack
+  - ~~slack~~
